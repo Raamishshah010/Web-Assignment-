@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quick Food</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#main">Quick <span style="color: #FF7B00">Food</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#main"> <img src="./assets/images/house.png" alt=""> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutUs"> <img src="./assets/images/information.png" alt=""> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu"> <img src="./assets/images/fork.png" alt=""> Menus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactUs"> <img src="./assets/images/reception-bell.png" alt=""> Reserve Now</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-cart" data-toggle="modal" data-target="#exampleModalLong"><img src="./assets/images/shopping-cart (1).png" alt=""> <span style="font-size: 12px; color: #fff ; background-color: red; padding: 1px 4px ; border-radius: 50%; border: none;">3</span>  </button>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Your Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="./assets/images/burger2.jpg" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <h5 class="card-title">Zinger Burger</h5>
+                            <p class="card-text">Best Burger in town</p>
+                        </div>
+
+                        <div class="card-price">
+                            <h5 class="card-title" style="color: gold">50$</h5>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="./assets/images/desi1.jpg" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <h5 class="card-title">Chicken Karahi</h5>
+                            <p class="card-text">Delicious Masala and Pure </p>
+                        </div>
+
+                        <div class="card-price">
+                            <h5 class="card-title" style="color: gold">50$</h5>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="./assets/images/pizza1.jpg" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <h5 class="card-title">Italian Pizza</h5>
+                            <p class="card-text">Best Pizza With Natural Flavour</p>
+                        </div>
+
+                        <div class="card-price">
+                            <h5 class="card-title" style="color: gold">50$</h5>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <button type="button" class="btn btn-primary">Check Out</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+
+    <section class="main" id="main">
+
+        <div class="container">
+            <div class="main-content">
+                <h1>Quick <span style="color: #FF7B00">Food</span></h1>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores deserunt, dolorem delectus tempora sapiente corporis error quia sit reiciendis.</h5>
+
+                <p class="text-center"><button class="btn btn-primary"> Order Now</button></p>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- HOW TO -->
+
+    <section class="howTo" id="howTo">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card1">
+                        <div class="card-body">
+                            <h5 class="card-title">Open The App</h5>
+                            <p class="card-text">Open the app and select the menu.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card2">
+                        <div class="card-body">
+                            <h5 class="card-title">Select The Menu</h5>
+                            <p class="card-text">Select Your desired menu and add it to cart</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card3">
+                        <div class="card-body">
+                            <h5 class="card-title">Open the cart </h5>
+                            <p class="card-text">Open Your Cart and place your order</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT US -->
+
+    <section class="aboutUs" id="aboutUs">
+
+        <div class="container-fluid">
+            <h1 class="text-center">Our <span style="color: #FF7B00">Restaurant</span></h1>
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6">
+                    <img class="img-fluid" src="./assets/images/card2.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="aboutContent">
+                        <h5>Our Restaurant History</h5>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni cupiditate repudiandae impedit, optio in voluptatem nostrum qui natus odio sed beatae dicta, tenetur quo eos dignissimos assumenda, fugit corporis reprehenderit
+                            quisquam illo asperiores ad inventore! Nemo blanditiis neque suscipit voluptatem, ut saepe. Doloribus alias cum quasi veritatis dolorum unde modi facilis accusantium sunt repellat repellendus quisquam in earum quam asperiores
+                            consectetur qui incidunt, officiis magnam? Ea expedita recusandae commodi, corporis est reiciendis molestiae quibusdam? Hic quibusdam quod, error ad numquam magni. Dicta vero sint temporibus odit aliquid illo laudantium quos
+                            aperiam reiciendis unde doloremque accusamus omnis, eos rem expedita.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- MENUS -->
+
+    <section class="menu" id="menu">
+        <div class="container-fluid">
+            <h1 class="text-center">Our <span style="color: #FF7B00">Menus</span></h1>
+
+            <nav class="nav justify-content-center">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Burger</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Pizza</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Desi</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/card1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zinger Burger</h5>
+                                        <p class="card-text">Best burger in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/burger2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zinger Burger</h5>
+                                        <p class="card-text">Best burger in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/burger3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zinger Burger</h5>
+                                        <p class="card-text">Best burger in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/burger4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zinger Burger</h5>
+                                        <p class="card-text">Best burger in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/pizza1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Italian Pizza</h5>
+                                        <p class="card-text">Best Pizza in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/pizza2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Italian Pizza</h5>
+                                        <p class="card-text">Best Pizza in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/pizza3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Italian Pizza</h5>
+                                        <p class="card-text">Best Pizza in town</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="./assets/images/desi1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Karahi</h5>
+                                        <p class="card-text">Touch of Good Quality Masala</p>
+                                        <a href="#" class="btn btn-primary">Order Now</a>
+                                        <a href="#" class="btn btn-primary"> <img src="./assets/images/shopping-cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="contactUs" id="contactUs">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-5">
+                    <img class="img-fluid" src="./assets/images/contactus.png" alt="">
+                </div>
+
+                <div class="col-sm-12 col-md-7">
+                    <div class="form">
+                        <h5 class="text-center">Reservation Information</h5>
+
+                        <div class="container-fluid">
+                            <div class="row">
+
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+                                        <label for="inputDate">Select Date</label>
+                                        <input type="input" class="form-control" id="inputDate">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="id_end_time">Select Time</label>
+                                        <div class="input-group date" id="id_2">
+                                            <input type="text" name="end_time" value="12:31:00 AM" class="form-control" placeholder="End time" title="" required="" id="id_end_time">
+                                            <div class="input-group-addon input-group-append">
+                                                <div class="input-group-text">
+                                                    <i class="glyphicon glyphicon-time fa fa-clock"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="Email" class="form-control" id="email" placeholder="Enter Your Email">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="phone">Phone No:</label>
+                                        <input type="number" class="form-control" id="phone" placeholder="Enter Your Number">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary">Reserve Now</button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+
+            <div class="row">
+
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-content">
+                        <h1>Quick <span style="color: #FF7B00">Food</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad dolor at tempora quasi nulla voluptatem totam sint nostrum consequuntur modi voluptatum distinctio quos iure, aliquid labore, minus rerum! Exercitationem modi
+                            provident numquam atque dolorem amet voluptates, nesciunt quo! Sit voluptas nihil cumque, quam dolore reprehenderit aperiam quibusdam aliquid exercitationem praesentium quos dolores perferendis eligendi voluptatem consequuntur
+                            possimus porro magni repudiandae velit iusto a corrupti, sed alias. Aliquid quibusdam dignissimos deserunt non quod nobis at, voluptas accusamus odit et doloribus adipisci numquam blanditiis laboriosam tempore tenetur unde
+                            quis officiis commodi consequuntur ea iure? Numquam quae rerum repellat deserunt. Qui, aliquam.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-4">
+
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <a href="">Privacy Policy</a>
+                        <a href="">About Us</a>
+                        <a href="">Reserve Now</a>
+                        <a href="">More</a>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-4">
+
+                    <div class="footer-social">
+                        <a href="https://www.fiverr.com/raamishshah10?up_rollout=true"><img class="img-fluid" src="./assets/images/facebook.svg" alt=""><img class="img-fluid" src="./assets/images/twitter.svg" alt=""><img class="img-fluid" src="./assets/images/fiverr (1).svg" alt=""><img class="img-fluid" src="./assets/images/instagram.svg"
+                                alt=""></a>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+    <div class="myProfile">
+        <p>Made with &#10084; By <a href="https://www.fiverr.com/raamishshah10?up_rollout=true">Syed Raamish Shah</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        $('#inputDate').datepicker({});
+
+        $('#id_2').datetimepicker({
+            "allowInputToggle": true,
+            "showClose": true,
+            "showClear": true,
+            "showTodayButton": true,
+            "format": "hh:mm:ss A",
+        });
+    </script>
+</body>
+
+</html>

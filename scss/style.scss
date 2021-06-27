@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.btn-cart {
+    background-color: transparent;
+    &:active {
+        outline: none;
+    }
+}
+
+.modal-body {
+    .card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        border: transparent;
+        box-shadow: 1px 1px 2rem rgba(197, 197, 197, 0.2);
+        border-radius: 1rem;
+        padding: 1rem;
+        .card-content {
+            margin-right: 5rem;
+            width: 100%;
+        }
+    }
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.btn-primary {
+    background-color: #FF7B00;
+    border-color: transparent;
+    padding: .4rem 2rem;
+    transition: all .3s;
+    &:hover {
+        border: #fff 1px solid;
+        background-color: #fff;
+        color: #FF7B00;
+        font-weight: 300;
+    }
+}
+
+.navbar {
+    background-color: transparent !important;
+    box-shadow: 0px 3px .4rem rgb(238, 238, 238) !important;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    ul {
+        margin-left: 14rem;
+        padding: .4rem;
+        li {
+            margin-left: 2rem;
+        }
+    }
+    img {
+        height: 1.3rem;
+    }
+}
+
+// MAIN
+.main {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.322)), url('/assets/images/homeBanner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .main-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            color: #fff;
+            font-weight: 300;
+        }
+        h5 {
+            text-align: center;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+}
+
+// HOW TO
+.howTo {
+    display: flex;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    .card1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/card1.jpg');
+        height: 20rem;
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: #fff;
+        padding-bottom: 4rem;
+        margin-top: 2rem;
+        h5 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 300;
+        }
+        p {
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+    .card2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/card2.jpg');
+        height: 20rem;
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 4rem;
+        margin-top: 2rem;
+        color: #fff;
+        h5 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 300;
+        }
+        p {
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+    .card3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/card3.jpg');
+        height: 20rem;
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 4rem;
+        margin-top: 2rem;
+        color: #fff;
+        h5 {
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+}
+
+// about us
+.aboutUs {
+    background: rgb(247, 247, 247);
+    h1 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        // margin-bottom: 4rem;
+        font-weight: 300;
+    }
+    img {
+        margin-bottom: 2rem;
+    }
+    .aboutContent {
+        h5 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+// MENU
+.menu {
+    transition: all 0.4s;
+    h1 {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        font-weight: 300;
+    }
+    .nav {
+        a {
+            color: #FF7B00;
+        }
+    }
+    .card {
+        border: transparent !important;
+        box-shadow: 0px 3px 2rem 0px rgba(207, 207, 207, 0.2) !important;
+        margin-top: 4rem;
+        border-radius: .3rem;
+        margin-bottom: 3rem;
+        h5 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .8rem;
+        }
+        .btn {
+            padding: .4rem 1rem;
+            &:hover {
+                background-color: #FF7B00;
+                color: #fff;
+            }
+            img {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+}
+
+// CONTACT US
+.contactUs {
+    background-color: #FF7B00;
+    padding-bottom: 6rem;
+    .form {
+        background-color: #fff;
+        transform: translateY(4rem);
+        height: 100%;
+        padding-bottom: 2rem;
+        h5 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            font-weight: 300;
+            font-size: 2rem;
+        }
+        label {
+            color: #FF7B00 !important;
+            font-size: 1rem;
+        }
+    }
+}
+
+footer {
+    padding-top: 5rem;
+    background: #F7F7F7;
+    display: flex;
+    a {
+        color: rgb(48, 48, 48);
+        display: flex;
+        flex-direction: row;
+        font-size: .8rem;
+        text-decoration: none !important;
+        &:hover {
+            color: #FF7B00;
+        }
+    }
+    .footer-links {
+        h5 {
+            margin-top: 1rem;
+        }
+    }
+    .footer-social {
+        margin-top: 3rem;
+        img {
+            width: 3rem;
+            height: 3rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.myProfile {
+    background: #FF7B00;
+    padding: .5rem;
+    p {
+        text-align: center;
+        font-size: 1rem;
+        color: #fff;
+        a {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
